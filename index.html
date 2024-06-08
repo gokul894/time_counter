@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Timer Counter</h1>
+        <div class="root" >
+            <div class="mini">
+                <label for="hour">HOUR</label>
+                <input type="number"
+                id="hour"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0, this.maxLength)"
+                placeholder="00">
+            </div>
+
+            <div class="mini">
+                <label for="minute">MINUTE</label>
+                <input type="number"
+                id="minute"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0, this.maxLength)"
+                placeholder="00">
+            </div>
+
+            <div class="mini">
+                <label for="second">SECOND</label>
+                <input type="second"
+                id="second"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0, this.maxLength)"
+                placeholder="00">
+            </div>
+
+        </div>
+        <div class="btn-area">
+            <span id="btn-start" class="btn-start">start</span>
+            <span id="btn-start" class="btn-end">stop</span>
+            <span id="btn-start" class="btn-reset">reset</span>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
